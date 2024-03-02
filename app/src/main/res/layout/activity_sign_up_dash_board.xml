@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpDashBoard"
+    android:layout_gravity="center"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pu_logo"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="90dp"
+            />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Started with"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PULink"
+            android:textSize="58sp"
+            android:textStyle="bold"
+            android:textColor="#1C468A"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bridging Skills, Shaping Futures!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Congratulation🎉🎉"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="#1C468A"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You Are Now Registered"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="#1C468A"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="15dp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gotodashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:text="Go To DashBoard"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_bg_2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

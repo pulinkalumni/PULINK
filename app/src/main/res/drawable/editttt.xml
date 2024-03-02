@@ -1,0 +1,6 @@
+<!-- ic_edit_with_margin.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define your edit icon with the desired margin -->
+    <item android:drawable="@drawable/edit"
+        android:right="15dp" /> <!-- Adjust the margin as per your requirement -->
+</layer-list>

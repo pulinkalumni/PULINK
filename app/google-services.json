@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51839764002",
+    "project_id": "pulink-33a6f",
+    "storage_bucket": "pulink-33a6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51839764002:android:0770a9ee8d5abaa1682c7b",
+        "android_client_info": {
+          "package_name": "com.example.pulink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQpnm3EF1sPaUQQwBDujCfA-DiDgAOgqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
