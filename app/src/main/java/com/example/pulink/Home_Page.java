@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Home_Page extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
@@ -25,12 +26,14 @@ public class Home_Page extends AppCompatActivity {
         bottomNavigationView=findViewById(R.id.bottom_navigation_view);
         logout_icon=findViewById(R.id.logout_icon);
 
+        FirebaseAuth firebaseAuth=FirebaseAuth.getInstance();
         logout_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Home_Page.this,Login_Page.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
 
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                firebaseAuth.signOut();
                 startActivity(intent);
                 finish();
             }
@@ -42,7 +45,7 @@ public class Home_Page extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id=item.getItemId();
                 if(id==R.id.account){
-                    loadFrag(new MyAccountPage(),false);
+                    loadFrag(new my_account_page(),false);
                 }
                 if(id==R.id.dashboard){
                     loadFrag(new DashBoard_Page_Frag(),false);

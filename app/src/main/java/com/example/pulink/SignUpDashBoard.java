@@ -20,7 +20,8 @@ public class SignUpDashBoard extends AppCompatActivity {
         gotodashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SignUpDashBoard.this,Home_Page.class);
+                Intent intent=new Intent(SignUpDashBoard.this,Login_Page.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });

@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp_Page"
-    android:layout_gravity="center"
-    android:gravity="center">
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="50dp"
+
         >
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/pu_logo"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="90dp"
             />
 
@@ -27,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Get Started with"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:gravity="center"
@@ -38,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PULink"
-            android:textSize="58sp"
+            android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="#1C468A"
             android:gravity="center"
@@ -49,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Bridging Skills, Shaping Futures!"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#000000"
             android:gravity="center"
@@ -63,15 +69,31 @@
             android:layout_height="wrap_content"
             >
             <EditText
-                android:id="@+id/email_edittext"
+                android:id="@+id/name_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
-                android:padding="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/edit_text_border"
+                android:hint="Name"
                 android:inputType="textEmailAddress"
-                android:layout_margin="10dp"
-                />
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/email_edittext"
+                android:layout_below="@id/name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp" />
 
 
             <EditText
@@ -92,7 +114,7 @@
                 android:layout_below="@+id/password_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="Conform Password"
                 android:padding="20dp"
                 android:background="@drawable/edit_text_border"
                 android:inputType="textPassword"
@@ -164,5 +186,6 @@
 
 
     </LinearLayout>
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
