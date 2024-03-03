@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "51839764002",
+    "firebase_url": "https://pulink-33a6f-default-rtdb.firebaseio.com",
     "project_id": "pulink-33a6f",
     "storage_bucket": "pulink-33a6f.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.pulink"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "51839764002-lr2vgpjvcjl8u899fbhsedumhglasu6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pulink",
+            "certificate_hash": "7fe84199beae7d7d227823249d9e933413467dda"
+          }
+        },
+        {
+          "client_id": "51839764002-runfu5jnlf1uqjpcjp9820f68f99qk8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBQpnm3EF1sPaUQQwBDujCfA-DiDgAOgqE"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51839764002-dlqakj89athlc871userv2ranjf033a5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
