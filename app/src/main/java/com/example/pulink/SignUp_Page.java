@@ -113,7 +113,7 @@ public class SignUp_Page extends AppCompatActivity {
 
     void signinusinggoogle(){
         Intent signIntent=gsc.getSignInIntent();
-//        startActivityForResult(signIntent,RC_SIGN_IN);
+        startActivityForResult(signIntent,RC_SIGN_IN);
     }
 
     @Override
