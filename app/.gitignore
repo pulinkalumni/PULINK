@@ -1,1 +1,4 @@
 /build
+.gradle
+
+app/google-services.json
